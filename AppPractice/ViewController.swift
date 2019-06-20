@@ -10,11 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+    @IBAction func buttonPressed(_ sender: UIButton) {
+         let myText = "you clicked 🥰"
+         underText.text = myText
+        button.setTitle("yayayya", for: .normal)
     }
-
-
+    @IBOutlet weak var underText: UILabel!
+    
+    @IBOutlet weak var button: UIButton!
+    
+    @IBOutlet weak var hallowPhoto: UIImageView!
 }
 
